@@ -1,3 +1,4 @@
+import NavBar from "@/components/Navbar";
 import "./globals.css";
 
 import { GeneralRegular } from "@/utils/fonts";
@@ -10,7 +11,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={GeneralRegular.className}>{children}</body>
+      <body className={GeneralRegular.className}>
+        <NavBar />
+        <div className="mt-[80px]">
+          {children}
+        </div>
+
+      </body>
     </html>
   );
 }

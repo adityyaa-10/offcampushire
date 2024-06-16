@@ -23,7 +23,7 @@ const NavBar = () => {
     }, []);
     return (
         <div className="fixed inset-x-0 top-0 flex flex-col-reverse z-50">
-            <nav className="relative flex h-20 flex-col items-center justify-between border-b border-[#e5e5e5] p-4 sm:h-20 sm:flex-row sm:px-6 sm:py-0">
+            <nav className="relative flex h-20 flex-col items-center justify-between border-b border-[#e5e5e5] bg-white p-4 sm:h-20 sm:flex-row sm:px-6 sm:py-0">
                 <div className="flex w-full items-center justify-between sm:h-full max-w-[1320px] mx-auto">
                     {/* Sidebar Menu Button */}
                     <button className="p-3 sm:hidden"
@@ -86,7 +86,7 @@ const NavBar = () => {
                         <div className="hidden lg:flex h-full shrink-0 items-center space-x-3">
                             <Link href="/login">
                                 <button type="button" className="sm:whitespace-nowrap leading-tight items-center justify-center border shadow-border  bg-white disabled:bg-white shadow-transparent p-3 text-sm space-x-2 inline-flex font-semibold rounded-lg cursor-pointer" aria-label="Log In">
-                                    <span>Log In</span>
+                                    <span>Sign In</span>
                                 </button>
                             </Link>
                             <button className='group relative h-fit rounded-lg transition-all hover:bg-blue-100 active:bg-blue-50 pointer-events-auto w-full'>

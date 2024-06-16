@@ -13,9 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={GeneralRegular.className}>
         <NavBar />
-        <div className="mt-[80px]">
-          {children}
-        </div>
+        <div className="mt-[80px]">{children}</div>
       </body>
     </html>
   );

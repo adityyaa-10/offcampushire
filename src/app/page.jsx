@@ -1,5 +1,5 @@
-import About from "@/components/Landing/About"
-import Header from "@/components/Landing/Header"
+import About from "@/components/Landing/About";
+import Header from "@/components/Landing/Header";
 
 const Home = () => {
   return (
@@ -7,7 +7,7 @@ const Home = () => {
       <Header />
       <About />
     </>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

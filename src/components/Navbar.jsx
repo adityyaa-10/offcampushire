@@ -73,7 +73,7 @@ const NavBar = () => {
                                 <div className="flex items-center gap-2.5"><span>About us</span></div>
                             </div>
                         </Link>
-                        <Link className="relative hidden sm:flex w-full cursor-pointer items-center justify-center space-x-2.5 rounded-md p-3 font-semibold" role="menuitem" href="/become-a-coach">
+                        <Link className="relative hidden sm:flex w-full cursor-pointer items-center justify-center space-x-2.5 rounded-md p-3 font-semibold" role="menuitem" href="/students">
                             <div className="flex w-full items-center whitespace-nowrap">
                                 <div className="flex items-center gap-2.5"><span>For Students</span></div>
                             </div>

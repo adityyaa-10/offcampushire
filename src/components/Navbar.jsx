@@ -48,9 +48,8 @@ const NavBar = () => {
           </button>
           <aside
             ref={sidebarRef}
-            className={`fixed inset-y-0 left-0 z-[500] w-[270px] transform bg-[#f5f5f5] transition-transform duration-300 ease-in-out ${
-              isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-            }`}
+            className={`fixed inset-y-0 left-0 z-[500] w-[270px] transform bg-[#f5f5f5] transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+              }`}
           >
             {/* Sidebar Content */}
             <div className="flex w-full flex-col bg-[#f5f5f5] sm:hidden">
@@ -99,7 +98,7 @@ const NavBar = () => {
             <Link
               className="relative hidden w-full cursor-pointer items-center justify-center space-x-2.5 rounded-md p-3 font-semibold hover:bg-slate-100 sm:flex"
               role="menuitem"
-              href="/events"
+              href="/about"
             >
               <div className="flex w-full items-center whitespace-nowrap">
                 <div className="flex items-center gap-2.5">

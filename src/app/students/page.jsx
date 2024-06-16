@@ -1,3 +1,4 @@
+import Reimagining from "@/components/Students/Reimagining"
 import SayGoodbye from "@/components/Students/SayGoodbye"
 import SpecialFeatures from "@/components/Students/SpecialFeatures"
 import Steps from "@/components/Students/Steps"
@@ -10,6 +11,7 @@ const StudentsPage = () => {
             <Steps />
             <SayGoodbye />
             <SpecialFeatures />
+            <Reimagining />
         </>
     )
 }

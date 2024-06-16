@@ -48,8 +48,9 @@ const NavBar = () => {
           </button>
           <aside
             ref={sidebarRef}
-            className={`fixed inset-y-0 left-0 z-[500] w-[270px] transform bg-[#f5f5f5] transition-transform duration-300 ease-in-out ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"
-              }`}
+            className={`fixed inset-y-0 left-0 z-[500] w-[270px] transform bg-[#f5f5f5] transition-transform duration-300 ease-in-out ${
+              isSidebarOpen ? "translate-x-0" : "-translate-x-full"
+            }`}
           >
             {/* Sidebar Content */}
             <div className="flex w-full flex-col bg-[#f5f5f5] sm:hidden">

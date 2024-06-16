@@ -18,7 +18,7 @@ export default function Header() {
             className={`${MonaSemibold.className} text-left text-[35px] text-[#020617] xl:text-[58px]`}
           >
             The future of{" "}
-            <span className="bg-custom-gradient bg-clip-text text-transparent">
+            <span className="bg-text-gradient bg-clip-text text-transparent">
               offcampus
             </span>{" "}
             placement drives is here

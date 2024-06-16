@@ -8,7 +8,7 @@ const StudentsHeader = () => {
           className={`${MonaSemibold.className} hero-heading w-full max-w-[850px] text-[2rem] font-bold tracking-tight lg:text-[2.5rem] lg:leading-[4rem] lg:tracking-normal`}
         >
           Introducing{" "}
-          <span className="bg-custom-gradient bg-clip-text text-transparent">
+          <span className="bg-text-gradient bg-clip-text text-transparent">
             off-campus
           </span>
           , your ultimate destination for off-campus placement drives

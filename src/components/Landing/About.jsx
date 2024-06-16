@@ -7,7 +7,7 @@ const About = () => {
         className={`mx-auto max-w-[720px] text-left text-[1.7rem] tracking-[-0.015em] lg:text-center lg:text-[2.6rem] ${MonaMedium.className} font-medium text-[#020617]`}
       >
         Reimagining{" "}
-        <span className="bg-custom-gradient bg-clip-text text-transparent">
+        <span className="bg-text-gradient bg-clip-text text-transparent">
           off-campus placement drives{" "}
         </span>
         ecosystem of India

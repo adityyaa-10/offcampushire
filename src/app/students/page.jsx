@@ -1,3 +1,4 @@
+import Empower from "@/components/Students/Empower";
 import Reimagining from "@/components/Students/Reimagining";
 import SayGoodbye from "@/components/Students/SayGoodbye";
 import SpecialFeatures from "@/components/Students/SpecialFeatures";
@@ -12,6 +13,7 @@ const StudentsPage = () => {
       <SayGoodbye />
       <SpecialFeatures />
       <Reimagining />
+      <Empower />
     </>
   );
 };

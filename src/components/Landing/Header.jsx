@@ -1,12 +1,12 @@
 import Image from "next/image";
 import HeroCard from "@/assets/Landing/herocard.svg";
 import Link from "next/link";
-import { GeneralMedium, MonaRegular, MonaSemibold } from "@/utils/fonts";
+import { GeneralMedium, MonaSemibold } from "@/utils/fonts";
 
 export default function Header() {
   return (
     <section
-      className="flex min-h-screen w-full items-center justify-center bg-cover bg-center"
+      className="flex pt-11 md:pt-20 lg:pt-36 w-full items-center justify-center bg-cover bg-center"
       style={{
         backgroundImage:
           "url('https://www.alchemy.com/_next/image?url=%2Fimages%2Fhero-bg.webp&w=1920&q=75')",
@@ -31,10 +31,8 @@ export default function Header() {
           </p>
           <div className="mt-8">
             <Link href="/get-started">
-              <button className="focus:shadow-purple group pointer-events-auto relative h-fit w-36 rounded-lg transition-all">
-                <span
-                  className={`flex flex-row items-center justify-center gap-2 rounded-lg px-3 py-3 text-sm font-bold leading-none tracking-wide text-[#FFFFFF] transition-all hover:bg-gray-200 hover:text-transparent hover:shadow-lg ${MonaRegular.className} bg-custom-gradient`}
-                >
+              <button className="group pointer-events-auto relative h-fit w-full rounded-lg transition-all hover:bg-blue-100 active:bg-blue-50">
+                <span className="from-gradient-vibrant-blue-100 to-gradient-vibrant-blue-200 flex flex-row items-center justify-center gap-2 rounded-lg bg-custom-gradient px-4 py-3 text-[14px] font-bold leading-none text-[#FFFFFF] transition-all hover:bg-clip-text hover:text-transparent hover:shadow-lg">
                   Get Started
                 </span>
               </button>

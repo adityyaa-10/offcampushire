@@ -10,7 +10,6 @@ const Reimagining = () => {
             "url('https://s3-alpha-sig.figma.com/img/d921/0d85/4be41e73dfca0db9ea660f32e4b35d57?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fClCDI9e2WRygD255sSHdyhXzfH1L-OtDiXccGqDnmNfCBLEtbthXKHDo4XeaWbRIoASJm6whqC7Bfs4~da8vcbihb8PnpnWYe-GsSfbkx6ozZjXyqzjH1wwXQ1n~OwIGfD6PXrtxYYWSjhfA6HItzCTEx0LSLWQBeYo8iTwGQ80Be1I8ufDrot6Djc~ekuwRm~UqxKZwEZRRFhLsQFnXOo-CkqXmHX4wa37bG~Y16nsHyTFtUhNS9Pl9ZZl7692BrJQOf22XBoGhc7BmUJXWN95oDq0W~hnTdCvtSJFMd~sTvRg7-cqjm0nkNVjQq3yvcwX66qbPbTS5r4dzPRtzA__')",
         }}
       >
-        <div className="absolute inset-0 bg-black opacity-20"></div>
         <div className="relative z-10 mx-auto flex flex-col items-center justify-center px-4 py-12 text-white sm:px-7 md:py-20 lg:px-4 lg:py-28">
           <h5
             className={`text-[2.25rem] ${MonaMedium.className} max-w-[840px] text-left md:text-center`}

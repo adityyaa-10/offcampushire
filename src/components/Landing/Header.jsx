@@ -6,7 +6,7 @@ import { GeneralMedium, MonaSemibold } from "@/utils/fonts";
 export default function Header() {
   return (
     <section
-      className="flex pt-11 md:pt-20 lg:pt-36 w-full items-center justify-center bg-cover bg-center"
+      className="flex w-full items-center justify-center bg-cover bg-center pt-11 md:pt-20 lg:pt-36"
       style={{
         backgroundImage:
           "url('https://www.alchemy.com/_next/image?url=%2Fimages%2Fhero-bg.webp&w=1920&q=75')",

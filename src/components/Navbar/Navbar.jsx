@@ -14,12 +14,13 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="sticky top-0 z-[999] h-full w-full bg-gray-400 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-10 border border-gray-100">
+      <nav className="sticky top-0 z-[999] h-full w-full rounded-md border border-gray-100 bg-gray-400 bg-opacity-10 bg-clip-padding backdrop-blur-sm backdrop-filter">
         <div className="relative flex flex-row items-center border-b border-gray-100 bg-[hsla(0,0%,100%,0.7)] backdrop-blur-[12px]">
-          <div className="relative z-30 mx-auto flex w-full flex-row items-center justify-between bg-white-700 px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
+          <div className="bg-white-700 relative z-30 mx-auto flex w-full flex-row items-center justify-between px-6 py-4 backdrop-blur-md xl:max-w-[1170px] xl:bg-transparent xl:px-0 xl:backdrop-filter-none">
             <div className="flex w-[162px] justify-start">
               <Link href="/" className="z-30 w-28">
-                <Image alt="logo"
+                <Image
+                  alt="logo"
                   width="280"
                   height="60"
                   className="z-30 h-fit w-full"
@@ -28,42 +29,44 @@ const Navbar = () => {
                 />
               </Link>
             </div>
-            <div className="hidden flex-row items-center gap-4 xl:flex  leading-none">
+            <div className="hidden flex-row items-center gap-4 leading-none xl:flex">
               <Link href="/about">
-                <div className='font-semibold group flex items-center gap-1'>
-                  <div className="z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[rgba(2, 6, 23, 1)] transition-all hover:bg-gray-100 hover:text-gray-900 text-[14px] ">
+                <div className="group flex items-center gap-1 font-semibold">
+                  <div className="text-[rgba(2, 6, 23, 1)] z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[14px] transition-all hover:bg-gray-100 hover:text-gray-900">
                     About us
                   </div>
                 </div>
               </Link>
               <Link href="/students">
-                <div className='font-semibold group flex items-center gap-1'>
-                  <div className="z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[rgba(2, 6, 23, 1)] transition-all hover:bg-gray-100 hover:text-gray-900 text-[14px] ">
+                <div className="group flex items-center gap-1 font-semibold">
+                  <div className="text-[rgba(2, 6, 23, 1)] z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[14px] transition-all hover:bg-gray-100 hover:text-gray-900">
                     For Students
                   </div>
                 </div>
               </Link>
               <Link href="/colleges">
-                <div className='font-semibold group flex items-center gap-1'>
-                  <div className="z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[rgba(2, 6, 23, 1)] transition-all hover:bg-gray-100 hover:text-gray-900 text-[14px] ">
+                <div className="group flex items-center gap-1 font-semibold">
+                  <div className="text-[rgba(2, 6, 23, 1)] z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[14px] transition-all hover:bg-gray-100 hover:text-gray-900">
                     College
                   </div>
                 </div>
               </Link>
             </div>
             <div className="z-30 hidden items-center gap-2 xl:flex">
-              <button className='group relative h-fit rounded-lg transition-all focus:shadow-purple pointer-events-auto w-full'>
-                <span className='flex flex-row items-center justify-center gap-2 rounded-lg transition-all bg-transparent text-[#020617] hover:bg-gray-100 hover:text-gray-700 active:bg-gray-50 active:text-blue-400 active:bg-clip-text active:text-transparent active:shadow-md px-4 py-3 text-[14px] font-bold leading-none'>
+              <button className="focus:shadow-purple group pointer-events-auto relative h-fit w-full rounded-lg transition-all">
+                <span className="flex flex-row items-center justify-center gap-2 rounded-lg bg-transparent px-4 py-3 text-[14px] font-bold leading-none text-[#020617] transition-all hover:bg-gray-100 hover:text-gray-700 active:bg-gray-50 active:bg-clip-text active:text-blue-400 active:text-transparent active:shadow-md">
                   Sign in
                 </span>
               </button>
-              <button className="group pointer-events-auto relative h-fit w-full rounded-lg transition-all hover:bg-blue-100 active:bg-blue-50">
-                <span className="from-gradient-vibrant-blue-100 to-gradient-vibrant-blue-200 flex flex-row items-center justify-center gap-2 rounded-lg bg-custom-gradient px-4 py-3 text-[14px] font-bold leading-none text-[#FFFFFF] transition-all hover:bg-clip-text hover:text-transparent hover:shadow-lg whitespace-nowrap">
-                  Get Started
-                </span>
-              </button>
+              <Link href="/signup">
+                <button className="group pointer-events-auto relative h-fit w-full rounded-lg transition-all hover:bg-blue-100 active:bg-blue-50">
+                  <span className="from-gradient-vibrant-blue-100 to-gradient-vibrant-blue-200 flex flex-row items-center justify-center gap-2 whitespace-nowrap rounded-lg bg-custom-gradient px-4 py-3 text-[14px] font-bold leading-none text-[#FFFFFF] transition-all hover:bg-clip-text hover:text-transparent hover:shadow-lg">
+                    Get Started
+                  </span>
+                </button>
+              </Link>
             </div>
-          </div >
+          </div>
           <button
             className="absolute right-6 z-30 h-5 w-5 text-gray-700 xl:hidden [&>*]:h-0.5 [&>*]:rounded-full [&>*]:bg-gray-700 [&>*]:transition-all [&>*]:duration-300 [&>*]:ease-in-out"
             onClick={handleMenuClick}
@@ -79,9 +82,8 @@ const Navbar = () => {
             ></div>
           </button>
           <NavbarMenuDropdown isMenuClicked={isMenuClicked} />
-        </div >
-      </nav >
-
+        </div>
+      </nav>
     </>
   );
 };

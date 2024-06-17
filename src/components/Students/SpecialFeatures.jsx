@@ -6,17 +6,18 @@ import progress from "@/assets/ForStudents/progress.svg";
 
 const SpecialFeatures = () => {
   return (
-    <div className="relative w-full bg-cover bg-center bg-no-repeat"
+    <div
+      className="relative w-full bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
           "url('https://www.alchemy.com/_next/image?url=https%3A%2F%2Fwww.datocms-assets.com%2F105223%2F1705611704-blur.webp&w=3840&q=75')",
       }}
     >
-      <div className="mx-auto max-w-[1200px] px-4 py-12 sm:px-7 md:py-20 lg:px-4 lg:py-28 bg-cover bg-center bg-no-repeat"
-
-      >
+      <div className="mx-auto max-w-[1200px] bg-cover bg-center bg-no-repeat px-4 py-12 sm:px-7 md:py-20 lg:px-4 lg:py-28">
         <div className="mb-12 max-w-[384px] text-start">
-          <h5 className={`${MonaSemibold.className} text-[20px] lg:text-[28px]`}>
+          <h5
+            className={`${MonaSemibold.className} text-[20px] lg:text-[28px]`}
+          >
             Resumes are a thing of the past
           </h5>
           <p
@@ -43,8 +44,8 @@ const SpecialFeatures = () => {
               <p
                 className={`${GeneralMedium.className} text-left text-[1.025rem] leading-[2rem] text-[#7B899C]`}
               >
-                With just one click, you can apply for off-campus drives. No more
-                filling out lengthy application forms or attaching resumes.
+                With just one click, you can apply for off-campus drives. No
+                more filling out lengthy application forms or attaching resumes.
               </p>
             </div>
           </div>
@@ -63,9 +64,9 @@ const SpecialFeatures = () => {
               <p
                 className={`${GeneralMedium.className} text-left text-[1.025rem] leading-[2rem] text-[#7B899C]`}
               >
-                Stay informed about the status of your applications with real-time
-                updates. Receive notifications about interview invitations,
-                application reviews, and more – all in one place.
+                Stay informed about the status of your applications with
+                real-time updates. Receive notifications about interview
+                invitations, application reviews, and more – all in one place.
               </p>
             </div>
           </div>

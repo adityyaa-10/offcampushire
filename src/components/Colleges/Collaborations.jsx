@@ -3,7 +3,7 @@ import { GeneralMedium } from "@/utils/fonts";
 export default function Collaborations() {
   return (
     <div className="purple-bg">
-      <div className="flex w-full flex-col items-center space-y-16 pt-16 lg:pt-24 lg:px-20 ">
+      <div className="flex w-full flex-col items-center space-y-16 pt-16 lg:px-20 lg:pt-24">
         <div className="z-10 mx-4 max-w-[575px] lg:mx-0">
           <div className="flex items-center justify-center rounded-2xl border-2 bg-white px-8 py-4 lg:px-16">
             <p

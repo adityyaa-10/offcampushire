@@ -1,5 +1,7 @@
+"use client";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
+import { useState, useRef } from "react";
 import purplearrow from "@/assets/Signup/purplearrow.svg";
 import {
   MonaMedium,
@@ -9,6 +11,34 @@ import {
 } from "@/utils/fonts";
 
 const SignupPage = () => {
+  const [otp, setOtp] = useState(Array(5).fill(""));
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const inputRefs = useRef([]);
+
+  const handleChange = (e, index) => {
+    const value = e.target.value;
+    if (/^\d?$/.test(value)) {
+      const newOtp = [...otp];
+      newOtp[index] = value;
+      setOtp(newOtp);
+      setError("");
+
+      if (value && index < otp.length - 1) {
+        inputRefs.current[index + 1].focus();
+      }
+
+      if (index === otp.length - 1 && newOtp.every((digit) => digit !== "")) {
+        setLoading(true);
+        setTimeout(() => {
+          setLoading(false);
+          setError(
+            "Oops! The invite code you entered doesn't seem to be correct. Please double-check and try again",
+          );
+        }, 2000);
+      }
+    }
+  };
   return (
     <div className="relative mx-auto h-full w-full">
       <Image
@@ -61,16 +91,33 @@ const SignupPage = () => {
                   off-campus placements{" "}
                 </p>
                 <div className="flex w-full items-center justify-between gap-x-1 whitespace-nowrap">
-                  {Array.from({ length: 5 }).map((_, index) => (
+                  {otp.map((digit, index) => (
                     <input
                       key={index}
                       type="text"
-                      className="h-[60px] w-[60px] rounded-[10px] border border-[#D7D7D7] text-center text-4xl font-semibold text-[#292A2A] sm:h-[75px] sm:w-[75px]"
+                      name={`otp-${index}`}
+                      id={`otp-${index}`}
+                      value={digit}
+                      onChange={(e) => handleChange(e, index)}
+                      className="h-[40px] w-[40px] border border-gray-300 text-center sm:text-[20px] lg:h-[75px] lg:w-[75px]"
                       maxLength={1}
+                      pattern="\d{1}"
+                      ref={(el) => (inputRefs.current[index] = el)}
+                      required
                     />
                   ))}
                 </div>
               </div>
+              {loading && (
+                <p className="max-w-[460px] pt-3 text-[1.125rem] leading-[1.8rem] text-[#4A90E2] lg:pt-6 lg:text-[19px] lg:leading-[2rem]">
+                  Verifying...
+                </p>
+              )}
+              {!loading && error && (
+                <p className="max-w-[460px] pt-3 text-[1.125rem] leading-[1.8rem] text-[#FF5A5FCC] lg:pt-6 lg:text-[19px] lg:leading-[2rem]">
+                  {error}
+                </p>
+              )}
             </div>
           </div>
         </div>

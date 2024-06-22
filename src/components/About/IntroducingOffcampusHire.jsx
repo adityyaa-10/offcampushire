@@ -12,7 +12,7 @@ const IntroducingOffcampusHire = () => {
       <div className="flex min-h-screen items-center justify-center bg-[#020617] pb-[35px] pt-[45px] text-center lg:pb-[60px] lg:pt-[30px]">
         <div>
           <span
-            className={`rounded-full bg-[#ddd6fe] px-6 py-3 text-base font-bold tracking-[0.08em] text-[#4c1d95] lg:px-10 lg:text-[1.25rem] ${GeneralMedium.className}`}
+            className={`rounded-full bg-[#ddd6fe] px-6 py-3 text-base font-bold text-[#4c1d95] lg:px-10 lg:text-[1.25rem] ${GeneralMedium.className}`}
           >
             INTRODUCING
           </span>

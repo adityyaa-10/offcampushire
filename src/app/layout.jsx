@@ -2,7 +2,6 @@ import "./globals.css";
 
 import { GeneralRegular } from "@/utils/fonts";
 import Navbar from "@/components/Navbar/Navbar";
-import ProgressProvider from "@/providers/ProgressProvider";
 
 export const metadata = {
   title: "OffCampusHire",
@@ -14,9 +13,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={GeneralRegular.className}>
         <Navbar />
-        <ProgressProvider>
-          {children}
-        </ProgressProvider>
+        {children}
       </body>
     </html>
   );

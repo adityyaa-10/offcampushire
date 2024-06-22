@@ -4,7 +4,7 @@ const UntilNow = () => {
   return (
     <div className="mx-auto flex max-w-[800px] flex-col items-center justify-center gap-y-7 px-4 py-12 sm:py-16 md:px-16 lg:py-24">
       <p
-        className={`text-[1.125rem] lg:text-[1.5rem] ${MonaRegular.className} text-center leading-[2.5rem] tracking-[0.02em] text-black lg:leading-[3rem]`}
+        className={`text-[1.2rem] lg:text-[1.5rem] ${MonaMedium.className} text-left md:text-center leading-[2.5rem] text-black lg:leading-[3rem]`}
       >
         There was no dedicated platform for freshers to apply for exclusive
         off-campus placement drives

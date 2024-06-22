@@ -81,7 +81,9 @@ const Navbar = () => {
               className={`w-5 ${isMenuClicked ? "-translate-y-0.5 -rotate-45" : "-translate-y-2"} `}
             ></div>
           </button>
-          <NavbarMenuDropdown isMenuClicked={isMenuClicked} />
+          <div className="flex flex-col items-center justify-center">
+            <NavbarMenuDropdown isMenuClicked={isMenuClicked} />
+          </div>
         </div>
       </nav>
     </>

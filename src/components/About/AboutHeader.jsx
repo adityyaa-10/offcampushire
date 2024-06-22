@@ -4,11 +4,11 @@ import hero from "@/assets/About/hero.svg";
 
 const AboutHeader = () => {
   return (
-    <header className={"pt-16 text-left md:text-center "}>
+    <header className={"pt-16 text-left md:text-center"}>
       <h1
-        className={` ${MonaMedium.className} text-[2.25rem] tracking-[-0.015em] sm:text-[3rem] lg:text-[4rem] lg:leading-[5.5rem] max-w-[900px] mx-auto px-4`}
+        className={` ${MonaMedium.className} mx-auto max-w-[900px] px-4 text-[2.25rem] tracking-[-0.015em] sm:text-[3rem] lg:text-[4rem] lg:leading-[5.5rem]`}
       >
-        Empowering freshers with{' '}
+        Empowering freshers with{" "}
         <span className="bg-text-gradient bg-clip-text text-transparent">
           off-campus placement drives
         </span>

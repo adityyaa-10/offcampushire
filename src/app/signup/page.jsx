@@ -77,7 +77,7 @@ const SignupPage = () => {
             </div>
             <div className="flex w-full flex-col items-center justify-center lg:w-1/2">
               <div
-                className="flex h-64 w-[90%] items-center justify-center rounded-t-[20px] bg-[#9540F2] text-center text-3xl md:text-4xl text-white sm:h-56 sm:w-[400px]"
+                className="flex h-64 w-[90%] items-center justify-center rounded-t-[20px] bg-[#9540F2] text-center text-3xl text-white sm:h-56 sm:w-[400px] md:text-4xl"
                 style={MonaMedium.style}
               >
                 offcampushire

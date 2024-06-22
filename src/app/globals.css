@@ -19,12 +19,11 @@
 }
 
 .bg-mobile {
-  background-image: url('https://www.alchemy.com/_next/image?url=%2Fimages%2Fhome-mobile.webp&w=2048&q=75');
+  background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhome-mobile.webp&w=2048&q=75");
 }
-
 
 @media (min-width: 768px) {
   .bg-mobile {
-    background-image: url('https://www.alchemy.com/_next/image?url=%2Fimages%2Fhero-bg.webp&w=1920&q=75');
+    background-image: url("https://www.alchemy.com/_next/image?url=%2Fimages%2Fhero-bg.webp&w=1920&q=75");
   }
 }

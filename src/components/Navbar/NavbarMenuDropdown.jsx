@@ -7,21 +7,26 @@ const NavbarMenuDropdown = ({ isMenuClicked }) => {
         className={` ${!isMenuClicked ? "pointer-events-none -z-20 opacity-0" : "z-20 opacity-100"} transition-opacity duration-300`}
       >
         <div className="absolute inset-0 flex h-screen w-screen flex-col bg-[rgb(255,255,255,1)] pt-14 xl:hidden">
-          <div className="flex flex-col items-center justify-center gap-y-5 mt-5 w-full px-4">
-
-            <Link href={'/about'} className=" transition-all w-full">
-              <div className="flex w-full items-center justify-center bg-custom-gradient py-5 rounded-full">
-                <span className="text-[18px] font-semibold leading-[1.1] text-white">About us</span>
+          <div className="mt-5 flex w-full flex-col items-center justify-center gap-y-5 px-4">
+            <Link href={"/about"} className="w-full transition-all">
+              <div className="flex w-full items-center justify-center rounded-full bg-custom-gradient py-5">
+                <span className="text-[18px] font-semibold leading-[1.1] text-white">
+                  About us
+                </span>
               </div>
             </Link>
-            <Link href={'/students'} className=" transition-all w-full">
-              <div className="flex w-full items-center justify-center bg-custom-gradient py-5 rounded-full">
-                <span className="text-[18px] font-semibold leading-[1.1] text-white">For Students</span>
+            <Link href={"/students"} className="w-full transition-all">
+              <div className="flex w-full items-center justify-center rounded-full bg-custom-gradient py-5">
+                <span className="text-[18px] font-semibold leading-[1.1] text-white">
+                  For Students
+                </span>
               </div>
             </Link>
-            <Link href={'/'} className=" transition-all w-full">
-              <div className="flex w-full items-center justify-center bg-custom-gradient py-5 rounded-full">
-                <span className="text-[18px] font-semibold leading-[1.1] text-white">College</span>
+            <Link href={"/"} className="w-full transition-all">
+              <div className="flex w-full items-center justify-center rounded-full bg-custom-gradient py-5">
+                <span className="text-[18px] font-semibold leading-[1.1] text-white">
+                  College
+                </span>
               </div>
             </Link>
           </div>

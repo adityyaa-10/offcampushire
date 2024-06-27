@@ -1,5 +1,4 @@
 "use client";
-
 import { useState } from "react";
 import NavbarMenuDropdown from "./NavbarMenuDropdown";
 import Image from "next/image";
@@ -10,6 +9,10 @@ const Navbar = () => {
 
   const handleMenuClick = () => {
     setIsMenuClicked(!isMenuClicked);
+  };
+
+  const closeMenu = () => {
+    setIsMenuClicked(false);
   };
 
   return (
@@ -51,6 +54,13 @@ const Navbar = () => {
                   </div>
                 </div>
               </Link>
+              <Link href="/ambassador">
+                <div className="group flex items-center gap-1 font-semibold">
+                  <div className="text-[rgba(2, 6, 23, 1)] z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[14px] transition-all hover:bg-gray-100 hover:text-gray-900">
+                    Ambassador
+                  </div>
+                </div>
+              </Link>
             </div>
             <div className="z-30 hidden items-center gap-2 xl:flex">
               <button className="focus:shadow-purple group pointer-events-auto relative h-fit w-full rounded-lg transition-all">
@@ -81,9 +91,14 @@ const Navbar = () => {
               className={`w-5 ${isMenuClicked ? "-translate-y-0.5 -rotate-45" : "-translate-y-2"} `}
             ></div>
           </button>
-          <div className="flex flex-col items-center justify-center">
-            <NavbarMenuDropdown isMenuClicked={isMenuClicked} />
-          </div>
+          {isMenuClicked && (
+            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center">
+              <NavbarMenuDropdown
+                isMenuClicked={isMenuClicked}
+                closeMenu={closeMenu}
+              />
+            </div>
+          )}
         </div>
       </nav>
     </>

@@ -3,9 +3,11 @@
 import { useEffect, useState } from "react";
 import Confetti from "react-confetti";
 import { MonaBold } from "@/utils/fonts";
+import { useWindowSize } from "@uidotdev/usehooks";
 
 const ConfettiComponent = () => {
     const [showConfetti, setShowConfetti] = useState(true);
+    const size = useWindowSize();
 
     useEffect(() => {
         const timer = setTimeout(() => {
@@ -19,8 +21,8 @@ const ConfettiComponent = () => {
         <div className="relative min-h-screen w-full flex flex-col items-center pt-12 bg-confetti-gradient px-4">
             {showConfetti && (
                 <Confetti
-                    width={window.innerWidth}
-                    height={window.innerHeight}
+                    width={size.width}
+                    height={size.height}
                     numberOfPieces={200}
                 />
             )}

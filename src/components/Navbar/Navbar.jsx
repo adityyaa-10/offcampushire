@@ -61,6 +61,13 @@ const Navbar = () => {
                   </div>
                 </div>
               </Link>
+              <Link href="/membership">
+                <div className="group flex items-center gap-1 font-semibold">
+                  <div className="text-[rgba(2, 6, 23, 1)] z-30 cursor-pointer items-center rounded-lg px-2 py-1.5 text-[14px] transition-all hover:bg-gray-100 hover:text-gray-900">
+                    Membership
+                  </div>
+                </div>
+              </Link>
             </div>
             <div className="z-30 hidden items-center gap-2 xl:flex">
               <button className="focus:shadow-purple group pointer-events-auto relative h-fit w-full rounded-lg transition-all">

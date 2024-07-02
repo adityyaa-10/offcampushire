@@ -56,6 +56,17 @@ const NavbarMenuDropdown = ({ isMenuClicked, closeMenu }) => {
                 </span>
               </div>
             </Link>
+            <Link
+              href={"/membership"}
+              className="w-full transition-all"
+              onClick={handleLinkClick}
+            >
+              <div className="flex w-full items-center justify-center rounded-full bg-custom-gradient py-5">
+                <span className="text-[18px] font-semibold leading-[1.1] text-white">
+                  Membership
+                </span>
+              </div>
+            </Link>
           </div>
           <div className="pointer-events-auto fixed bottom-0 left-0 flex w-full flex-col-reverse gap-2 bg-[rgb(255,255,255,1)] p-6 opacity-100 transition-opacity">
             <a href="" className="w-full" onClick={handleLinkClick}>
